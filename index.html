@@ -1,0 +1,189 @@
+<html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Portfolio</title>
+<link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">" />
+<style>
+  body {
+    font-family: 'Jersey';
+    margin: 0;
+    padding: 0;
+    background-image: url('https://cdn.dribbble.com/userupload/23473398/file/original-2ab31a32448b2930137f030e095a4c68.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+    line-height: 1.6;
+  }
+  header {
+    background-color: rgba(255, 102, 178, 0.8);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+  header img {
+    border-radius: 50%;
+    border: 4px dashed #fff;
+    margin-top: 10px;
+  }
+  button {
+    background-color: #fff0f5;
+    border: 3px dashed #fff;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-family: 'Jersey';
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  button:hover {
+    background-color: #ff66b2;
+    color: #fff;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 192, 203, 0.8); 
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+  nav a {
+    color: #fff;
+    background-color: #ff69b4; 
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Jersey';
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  nav a:hover {
+    background-color: #ff1493; 
+  }
+  section {
+    padding: 30px 20px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: rgba(255, 230, 245, 0.8); 
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-family: 'Jersey';
+    font-size: 2em;
+    color: #ff66b2;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .skill {
+    width: 150px;
+    margin: 15px;
+    text-align: center;
+    background-color: #fff0f5;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .skill img {
+    margin-bottom: 10px;
+  }
+  footer {
+    background-color: rgba(255, 102, 178, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  @media(max-width: 600px){
+    nav {
+      flex-direction: column;
+    }
+    .skills {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+<h1>sara salim</h1>
+<img src="C:\sara2024000243\babyme.png"  width="200" height="200" />
+<button onclick="alert('Contact me at f2024000243@buc.edu.om')">Contact Me</button>
+</header>
+
+<nav>
+<a href="#about">About Me</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+<form action="#search" method="GET" style="margin-left: 10px; display: flex; align-items: center;">
+  <input type="text" name="query" placeholder="Search..." aria-label="Search" style="padding: 8px; border-radius: 20px; border: 2px dashed #fff; outline: none; font-family: 'Comic Neue', cursive;"/>
+  <button type="submit" style="background-color: #fff0f5; border: 2px dashed #fff; border-radius: 20px; padding: 8px 12px; margin-left: 5px; cursor:pointer;">🔍</button>
+</form>
+</nav>
+
+<section id="about">
+<h2>About Me</h2>
+<p>i am a 19 year old Software Enginner, i study at BUC and i am in second year. i am very passionate about my major as i hope to be a senior developer one day. </p>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+  <div class="skill">
+    <img src="C:\sara2024000243\html.png" alt="HTML" width="50"/>
+    <progress value="35" max="100"></progress>
+    <p>HTML</p>
+  </div>
+  <div class="skill">
+    <img src="C:\sara2024000243\css.png" alt="CSS" width="50"/>
+    <progress value="35" max="100"></progress>
+    <p>CSS</p>
+  </div>
+  <div class="skill">
+    <img src="C:\sara2024000243\java.png" alt="Java" width="50"/>
+   <progress value="35" max="100"></progress>
+    <p>Java</p>
+  </div>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<ul>
+  <li><strong>Portfolio</strong> - my personal website, that showcases my skills.</li>
+  <li><strong>projects</strong> - i am currently an undergraduate student at buc. no official projects.</li>
+</ul>
+</section>
+
+<section id="contact">
+<h2>Contact Me</h2>
+<p>Email:f2024000243@buc.edu.om</p>
+<button onclick="alert('Thank you for reaching out!')">Send a Message</button>
+</section>
+
+<footer>
+<p>&copy;sara salim</p>
+</footer>
+
+</body>
+</html>
+  
